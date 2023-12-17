@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.crd-hvr:hover{
+    border-color: #d2aa5c;
+    transition: 700ms;
+}
+.crd-hvr:hover span a{
+    background-color: #d2aa5c !important;
+    transition: 700ms !important;
+}
+
+.frm-btn:hover{
+    background-color: #d2aa5c;
+    border-color: #d2aa5c;
+    transition: 700ms;
+}

@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hvr-up a:hover{
+    color: rgb(6, 53, 6) !important;
+    transition: 700ms !important;
+}
+
+.menu-hvr:hover{
+    color: #01ae6e !important;
+    transition: 500ms !important;
+}
+
+.scrh:focus{
+    outline-color: #01ae6e;
+}
+
+.menu{
+    position: relative;
+}
+
+.Product-hvr {
+	position: absolute;
+	top: 75px;
+	left: 68px;
+	background-color: #ffffff;
+	width: 75em;
+	height: 26rem;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 3px #000;
+    visibility: hidden;
+    opacity: 0;
+
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: 700ms;
+}
+
+.drp-category li:hover  .Product-hvr{
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+    z-index: 9;
+}
+
+.safe-way{
+    background: url(/image/Banner/banner_2040x.jpg) no-repeat center top;
+    max-width: 2000%;
+    padding: 100px 0;
+    
+
+    
+}
+
+/* New Arrival style */
+
+.new-arrivel{
+    position: relative;
+}
+
+.mosa{
+    position: absolute;
+    top: 70px;
+    left: 0;
+}
+
+.arv-btn a:hover{
+    color: #01ae6e !important;
+    border-bottom: 1px solid #01ae6e !important;
+    transition: 500ms !important;
+    
+}
+
+/* Product Item style */
+
+.Product-item > a{
+    position: relative;
+    display: block;
+}
+.Product-item > a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #01ae6e33;
+    opacity: 0;
+    visibility: hidden;
+    
+    transform: scaleX();
+    transform-origin: bottom center; 
+    transition: 500ms;
+}
+.Product-item:hover a::after{
+    opacity: 1;
+    visibility: visible;
+    
+
+    transform: scaleX(1);
+}
+
+
+.Product-item:hover  span a{
+    color: #01ae6e !important;
+    transition: 500ms;
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    .Product-item > a{
+        position: relative;
+        display: block;
+    }
+    .Product-item > a::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #01ae6e33;
+        opacity: 0;
+        visibility: hidden;
+        
+        transform: scaleX();
+        transform-origin: bottom center; 
+        transition: 500ms;
+    }
+    .Product-item:hover a::after{
+        opacity: 1;
+        visibility: visible;
+        
+    
+        transform: scaleX(1);
+    }
+    
+    
+    .Product-item:hover  span a{
+        color: #01ae6e !important;
+        transition: 500ms;
+    }
+    
+   
+  }
+
+/* customer says style */
+
+.custommer-says{
+    background: url(/image/Banner/banner-2_1728x.jpg) no-repeat fixed;
+    padding: 50px 0;
+    
+}
+
+.testimonial-item{
+    border: 5px solid #000;
+    transition: 300ms;
+}
+.testimonial:hover .testimonial-item{
+    border: 5px solid #01ae6e;
+}
+
+.frm{
+    position: relative;
+}
+.src{
+    position: absolute;
+    top: -2px;
+    right: 83px;
+}
+
+@media (max-width:450px) {
+    .header-up{
+        font-size: 12px;
+    }
+    .logo-img img{
+       width: 80px;
+    }
+    .logo-title span{
+        font-size: 16px !important;
+    }
+    .mobile-menu{
+        font-size: 14px;
+    }
+    .prt-item h4{
+        font-size: 14px;
+    }
+    .prt-item h2{
+        font-size: 18px;
+    }
+    .safe-way h4{
+        font-size: 14px;
+    }
+    .safe-way p{
+        font-size: 22px;
+    }
+    .safe-way h3{
+        font-size: 14px;
+    }
+    .safe-way{
+        background: url(/image/Banner/banner_2040x.jpg) no-repeat center center;
+        background-size: cover;
+        max-width: 100%;
+    }
+    .mosa img{
+        width: 100px;
+    }
+    .new-arrivel-title img{
+        width: 100px;
+    }
+    .new-arrivel-title h2{
+        font-size: 20px;
+    }
+    .new-arrivel-title p{
+        font-size: 14px !important;
+    }
+    .new-arrivel-option span a{
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width:1200px) {
+    .frm{
+        position: relative;
+        width: 20rem;
+    }
+    .src{
+        position: absolute;
+        top: -2px;
+        right: 60px;
+    }
+    
+}
+
+@media (max-width:450px) {
+   
+}
